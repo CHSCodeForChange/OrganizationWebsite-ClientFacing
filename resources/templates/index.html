@@ -22,8 +22,9 @@
     <link href="/static/css/one-page-wonder.css" rel="stylesheet">
     <link href="/static/css/team.css" rel="stylesheet">
     <link href="/static/css/timeline.css" rel="stylesheet">
+    <link href="/static/css/map.css" rel="stylesheet">
     <link href="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
 
 
   </head>
@@ -165,7 +166,7 @@
           </div>
         </div>
         <div class="row" style="padding-top: 5%;">
-            <a href="/code/projects.html" class="fade-in text-center btn btn-project-types btn-primary btn-xl rounded-pill mt-1">View Past Projects</a>
+            <a href="/projects" class="fade-in text-center btn btn-project-types btn-primary btn-xl rounded-pill mt-1">View Past Projects</a>
         </div>
       </div>
     </section>
@@ -270,6 +271,22 @@
             </div>
         </div>
     </div>
+
+</section>
+
+<section style="width:100%;" class="map fade-in">
+  <div class="map-overlay">
+    <div class="map-overlay-text fade-in">
+      <h2 class="display-4 subhead">Our Locations</h2>
+      <p class="home">Don't see a location near you? Click below to learn about creating a Code For Change club.</p>
+      <a href="/code/projects.html" class="text-center btn btn-project-types btn-primary btn-xl rounded-pill mt-1">Create A Club</a>
+
+    </div>
+
+  </div>
+  <iframe style="width:100%" src="/map" height="700" frameBorder="0"></iframe>
+
+
 </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -380,6 +397,7 @@
     <footer class="py-5 bg-black">
       <div class="container">
         <p class="m-0 text-center text-white medium">Copyright &copy; Code For Change USA 2018</p>
+
       </div>
       <!-- /.container -->
     </footer>
