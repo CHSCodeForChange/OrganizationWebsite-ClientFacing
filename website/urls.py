@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^projects/', views.projects, name='projects'),
     url(r'^team/', views.team, name='team'),
     url(r'^map/', views.map, name='map'),
+    url(r'^keepalive/', views.keepalive, name='keepalive'),
 ]
