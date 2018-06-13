@@ -1,0 +1,134 @@
+
+.hovercontainer {
+  position: relative;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.image {
+}
+
+.overlay {
+  position: absolute;
+  height: 17rem;
+  width: 17rem;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.top {
+  top: -2rem;
+}
+
+.left {
+  right: 5rem;
+}
+
+.right {
+  left: 5rem;
+}
+
+.bottom {
+   bottom: -2rem;
+}
+
+.tright {
+    text-align: right!important;
+}
+
+.tleft {
+    text-align: left!important;
+}
+
+.hovercontainer:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  color: white;
+  font-size: 250%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.texttop {
+    top: 70%;
+}
+
+.textleft {
+    left: 60%;
+    text-align: right;
+}
+
+.textright {
+    left: 40%;
+    text-align: left;
+}
+
+.textbottom {
+    bottom: 20%;
+}
+
+@media (max-width: 767px) {
+    .overlay {
+      position: absolute;
+      width: 8rem;
+      height: 8rem;
+      opacity: .9;
+      transition: .5s ease;
+    }
+
+    .image {
+         width: 100%;
+         height: auto;
+    }
+
+    .tright {
+        text-align: center!important;
+    }
+
+    .tleft {
+        text-align: center!important;
+    }
+
+    .top {
+      top: 0rem;
+    }
+
+    .left {
+      right: 0%;
+    }
+
+    .right {
+      left: 0rem;
+    }
+
+    .bottom {
+       bottom: 0rem;
+    }
+
+    .hovercontainer {
+        margin-top: 5%;
+    }
+
+    .texttop {
+        top: 0%;
+    }
+
+    .textleft {
+        left: 0%;
+    }
+
+    .textright {
+        left: 0%;
+    }
+
+    .textbottom {
+        bottom: 0%;
+    }
+
+    .text {
+        font-size: 150%;
+    }
+}

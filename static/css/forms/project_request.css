@@ -1,0 +1,25 @@
+.form {
+    margin: 1%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 180% !important;
+}
+
+.form::placeholder {
+    color: black;
+    display: table-cell;
+}
+
+.form:focus {
+    border-bottom: 1px solid #008CBA;
+    color: #008CBA;
+    font-size: 200% !important;
+    -webkit-box-shadow:  none;
+    -moz-box-shadow:  none;
+    box-shadow:  none;
+}
+
+.form:focus::placeholder {
+    color: #008CBA;
+}
