@@ -1,43 +1,68 @@
 {% extends 'header.html' %}
+{% load static %}
 
 {% block content %}
 
-  <div class="container main-body-team" style="padding-top:5%">
+  <div class="container main-body-team" style="padding-top: 5%;">
     <h1 class="display-1 headline">Leadership Team</h1>
 
     <div class="row">
       <div class="column">
         <div class="card">
-          <img src="/static/img/armaan.jpg" alt="Armaan Goel" style="width:100%">
+          <img class="portrait" src="/static/img/armaan.jpg" alt="Armaan Goel">
           <div class="container">
             <h2 style="margin-top:1rem;">Armaan Goel</h2>
             <p class="title">President &amp; Founder</p>
             <p style="padding-bottom:8%">Armaan got the idea for the club when visiting a “civic hackathon” in Indianapolis: a 24 hour event where teams compete to find coding solutions to community problems. Besides Code for Change, he also participates in the HiLite Newspaper, Techounds Robotics Team, Science Olympiad, and Boy Scouts. In his free time he likes to program, bike and go camping.</p>
-            <div class="text-center"><a href="mailto:armaangoel78@gmail.com" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
+            <div class="contact-button"><a href="mailto:armaangoel78@gmail.com" target="_blank" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
           </div>
         </div>
       </div>
 
       <div class="column">
         <div class="card">
-          <img src="/static/img/evan.jpg" alt="Evan Kenyon" style="width:100%">
+          <img class="portrait" src="/static/img/evan.jpg" alt="Evan Kenyon">
           <div class="container">
             <h2 style="margin-top:1rem;">Evan Kenyon</h2>
             <p class="title">Vice President</p>
             <p>Evan assisted in starting the club when Armaan told him about the Civic Hackathons. Evan worked at an electronic health records company over this past summer doing coding. He also is vice president of Red Cross Club, troubleshoot lead of Computer Building Club and he is participating in the school robotics team and Model UN. In his free time, he likes to hang out with his friends and family.</p>
-            <div class="text-center"><a href="mailto:evan.m.kenyon@gmail.com" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
+            <div class="contact-button"><a href="mailto:evan.m.kenyon@gmail.com" target="_blank" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
           </div>
         </div>
       </div>
 
       <div class="column">
         <div class="card">
-          <img src="/static/img/jared.jpg" alt="Jared Stigter" style="width:100%">
+          <img class="portrait" src="/static/img/jared.jpg" alt="Jared Stigter">
           <div class="container">
             <h2 style="margin-top:1rem;">Jared Stigter</h2>
             <p class="title">Chief Technology Officer</p>
             <p>When Armaan Goel approached Jared with the idea of a club dedicated to serving the community and a possible project to start, Jared jumped on board. He has been programming for several years and has developed a variety of skills. Besides Code For Change, Jared works part time and continues to develop other projects on the side, and enjoys computers, games, and movies.</p>
-            <div class="text-center"><a href="mailto:jaredstigter@gmail.com" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
+            <div class="contact-button"><a href="mailto:jaredstigter@gmail.com" target="_blank" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
+          </div>
+        </div>
+      </div>
+
+	    <div class="column">
+        <div class="card">
+          <img class="portrait img-responsive" src="/static/img/joe.jpg" alt="Joseph Paavola">
+          <div class="container">
+            <h2 style="margin-top:1rem;">Joseph Paavola</h2>
+            <p class="title">Lead Developer</p>
+            <p>Joe was offered a position when the club was first founded but declined due to prior commitments. When his schedule cleared up he immediately started to help build Code for Change's first major project: Sapphire. When he isn't debugging a Code For Change project, Joe competes in Science Olympiad, goes backpacking with his family and plays music with his brother.</p>
+            <div class="contact-button"><a href="mailto:joepaavola@gmail.com" target="_blank" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
+          </div>
+        </div>
+      </div>
+
+       <div class="column">
+        <div class="card">
+          <img class="portrait img-fluid" src="/static/img/andrew.jpg" alt="Andrew Sleugh">
+          <div class="container">
+            <h2 style="margin-top:1rem;">Andrew Sleugh</h2>
+            <p class="title">PR Director</p>
+            <p>Andrew has worked with Code For Change since it first began. When it became clear that better communication and public relations would be vital to the club's development, Andrew stepped up to bat. He has been invaluable in keeping everyone in the loop and has helped keep the club growing. He is also a co-founder of the Carmel Quiz Bowl Chapter, Planetarium club leader and works at Laser flash in his spare time. </p>
+            <div class="contact-button"><a href="mailto:andrewsleugh@gmail.com" target="_blank" class="btn btn-primary btn-xl rounded-pill2 mt-1">Contact</a></div>
           </div>
         </div>
       </div>

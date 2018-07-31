@@ -1,7 +1,7 @@
 
 .column {
     float: left;
-    width: 33.3%;
+    width: 20%;
     margin-bottom: 16px;
     padding: 0 8px;
 }
@@ -16,7 +16,8 @@
 
 /* Add some shadows to create a card effect */
 .card {
-    margin: 3%
+    margin: 3%;
+    height: 875px;
 }
 
 /* Some left and right padding inside the container */
@@ -26,6 +27,21 @@
 
 .title {
     color: grey;
+}
+
+.portrait {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.contact-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .button {
@@ -56,6 +72,11 @@
 
 .service-icon{background-color:#fff;color:#1d809f;height:7rem;width:7rem;display:block;line-height:7.5rem;font-size:2.25rem;box-shadow:0 3px 3px 0 rgba(0,0,0,.1)}
 
+@media (min-width: 992px) {
+    .main-body-team {
+        max-width: 90%;
+    }
+}
 
 @media (min-width: 1200px) {
     .main-body {
