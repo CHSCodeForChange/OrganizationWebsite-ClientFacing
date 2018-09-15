@@ -1,0 +1,13 @@
+{% extends 'header.html' %}
+
+{% block content %}
+	<div style="width: 70%; height: 20%; margin: 5% 15% 5% 15%;">
+		<center><h1 style="font-size: 5em;">See What's Going On</h1></center>
+	</div>
+	<div id="pixlee_container"></div>
+	<script type="text/javascript">window.PixleeAsyncInit = function () {
+        Pixlee.init({apiKey: '3iaXM3cPwbnCjeXSIALk'});
+        Pixlee.addSimpleWidget({widgetId: '9035'});
+    };</script>
+	<script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+{% endblock %}

@@ -13,5 +13,8 @@ def team(request):
 def map(request):
     return render(request, 'map.html', {})
 
+def activity(request):
+    return render(request, 'activity.html', {})
+
 def keepalive(request):
     return redirect('/map')
