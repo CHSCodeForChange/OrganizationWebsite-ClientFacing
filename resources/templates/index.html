@@ -1,4 +1,4 @@
-{% extends 'header.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
 	<header class="masthead text-center text-white">
@@ -266,11 +266,90 @@
 	</div>
 
 
-	<div id="contact" style="height: 100%; width:100%; margin: 0px; background: url('/static/img/extra/1.jpg') no-repeat center center fixed; background-size: cover; padding-top: 15%; padding-bottom: 15%;">
-		<div style="margin-left: 10%; display: block; color: white;">
-			<h1>Got A Project?</h1>
-			<h2>Email us at <a href="mailto:codeforchangeusa@email.com">codeforchangeusa@gmail.com</a></h2>
-			<h2>Message on <a href="https://www.instagram.com/chscodeforchange/">Instagram</a></h2>
+	<div id="contact"
+	     style="height: 100%; width:100%; margin: 0px; background: url('/static/img/extra/1.jpg') no-repeat center center fixed; background-size: cover; padding-top: 15%; padding-bottom: 15%;">
+		<div style="display: block; color: white; width: 90%; margin-left: 5%; margin-right: 5%;">
+			<style>
+				#masterTable {
+					border-collapse: separate;
+					border-spacing: 10px 10px;
+					background-color: transparent;
+					width: 100%;
+				}
+
+				.has-error .help-block {
+					display: block;
+				}
+
+				.help-block {
+					font-size: small;
+					color: red;
+					margin: 0px;
+					padding: 0px;
+					display: none;
+				}
+			</style>
+			<center><h1>Contact Us</h1></center>
+			<form action="/contact/" method="post" id="masterTable">
+				{% csrf_token %}
+				<table style="width: 80%; margin-top: 5%; background-color: transparent; margin-left: 10%; margin-right: 10%;">
+					<tbody>
+					<tr style="max-height: 200px;">
+						<td style="width: 38%; padding-right: 2%;">
+							<div class="form-group {% if form.subject.errors %}has-error{% endif %}">
+								<input name="firstName" class="form-control form" placeholder="First Name"
+								       id="id_firstName"
+								       type="text" required="required">
+								<p class="help-block">This is incorrect.</p>
+
+							</div>
+
+							<div class="form-group {% if form.subject.errors %}has-error{% endif %}">
+								<input name="lastName" class="form-control form" placeholder="Last Name"
+								       id="id_lastName"
+								       type="text" required="required">
+								<p class="help-block">This is incorrect.</p>
+
+							</div>
+
+							<div class="form-group {% if form.subject.errors %}has-error{% endif %}">
+								<input name="organization" class="form-control form" placeholder="Organization Name"
+								       id="id_organization" type="text" required="required">
+								<p class="help-block">This is incorrect.</p>
+
+							</div>
+
+							<div class="form-group {% if form.subject.errors %}has-error{% endif %}">
+								<input name="email" style="margin-bottom: 0px;" class="form-control form"
+								       placeholder="Email"
+								       id="id_email" type="email"
+								       required="required">
+								<p class="help-block">This is incorrect.</p>
+
+							</div>
+						</td>
+
+
+						<td style="width: 60%; margin: 0px; padding: 0px;">
+							<div class="form-group {% if form.subject.errors %}has-error{% endif %}">
+					<textarea name="comment"
+					          style="padding: 0px; margin: 0px; width: 100%; height: 200px;"
+					          type="text" class="form-control form" placeholder="Description"
+					          required="required"></textarea>
+								<p class="help-block">This is incorrect.</p>
+
+							</div>
+						</td>
+					</tr>
+					<tr style="margin-top: 20px;">
+						<td colspan="2"><input type="submit" class="btn btn-primary btn-block" name="submit"
+						                       value="Submit"/>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</form>
+			<center style="margin-top: 3%;"><h4><a href="mailto:chscodeforchange@gmail.com" target="_top">chscodeforchange@gmail.com</a></h4></center>
 		</div>
 	</div>
 

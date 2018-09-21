@@ -14,7 +14,7 @@ def organization(request):
             org.save()
 
             return redirect('/')
-    return render(request, 'forms/project_request.html', {'form': form})
+    return render(request, 'contact.html', {'form': form})
 
 def media(request):
     return render(request, 'form.html', {})

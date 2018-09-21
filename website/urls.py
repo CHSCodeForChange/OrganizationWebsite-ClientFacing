@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^team/', views.team, name='team'),
     url(r'^map/', views.map, name='map'),
     url(r'^activity/', views.activity, name='activity'),
+    url(r'^contact/', views.contact),
     url(r'^keepalive/', views.keepalive, name='keepalive'),
 ]
