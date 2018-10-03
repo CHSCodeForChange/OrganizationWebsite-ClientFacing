@@ -43,7 +43,7 @@ def contact(request):
 
 			sg = sendgrid.SendGridAPIClient(apikey='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')
 			from_email = Email("testemail2081@gmail.com")
-			to_email = Email("jaredstigter@gmail.com")
+			to_email = Email("chscodeforchange@gmail.com")
 			subject = "New Contact From Website"
 			content = Content("text/plain", message)
 			mail = Mail(from_email, subject, to_email, content)
