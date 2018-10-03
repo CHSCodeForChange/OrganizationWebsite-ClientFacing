@@ -45,7 +45,7 @@ def contact(request):
 			from_email = Email("testemail2081@gmail.com")
 			to_email = Email("jaredstigter@gmail.com")
 			subject = "New Contact From Website"
-			content = Content("text/plain",'what up boys')
+			content = Content("text/plain", message)
 			mail = Mail(from_email, subject, to_email, content)
 			response = sg.client.mail.send.post(request_body=mail.get())
 
