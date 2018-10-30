@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8639d3003592e3b43347ca9b8cce87ad229bf1bde336ed9d2daf0acba6334123"
+            "sha256": "3cd7d60d5dc3a4e69f7939e1e251b15708a89f278a28a165207b80750d4e2bee"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -101,7 +101,7 @@
                 "sha256:fe6931db24716a0845bd8c8915bd096b77c2a7043e6fc59ae9ca364fe816f08b"
             ],
             "index": "pypi",
-            "markers": "python_version >= '2.7' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*' and python_version != '3.3.*'",
+            "markers": "python_version >= '2.7' and python_version != '3.1.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.3.*'",
             "version": "==5.1.0"
         },
         "psycopg2-binary": {
@@ -137,12 +137,26 @@
             "index": "pypi",
             "version": "==2.7.4"
         },
+        "python-http-client": {
+            "hashes": [
+                "sha256:7e430f4b9dd2b621b0051f6a362f103447ea8e267594c602a5c502a0c694ee38"
+            ],
+            "version": "==3.1.0"
+        },
         "pytz": {
             "hashes": [
                 "sha256:a061aa0a9e06881eb8b3b2b43f05b9439d6583c206d0a6c340ff72a7b6669053",
                 "sha256:ffb9ef1de172603304d9d2819af6f5ece76f2e85ec10692a524dd876e72bf277"
             ],
             "version": "==2018.5"
+        },
+        "sendgrid": {
+            "hashes": [
+                "sha256:97eb356ea44a18a03e6fe99f02b7942445be306a50f73a7dd35471fe15cc0094",
+                "sha256:9e9d3d75602b8853f174ec959d1af1ac168cd361cbcafc81285fa8c183f7a505"
+            ],
+            "index": "pypi",
+            "version": "==5.6.0"
         },
         "whitenoise": {
             "hashes": [

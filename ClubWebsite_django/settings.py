@@ -120,11 +120,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-EMAIL_HOST_USER = 'testemail2081@gmail.com' #this is a testing account
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'testemail2081@gmail.com'
 EMAIL_HOST_PASSWORD = 'TandemTricycle'
 EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'testemail2081@gmail.com'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
